@@ -32,8 +32,12 @@ columntest = []
 spantest = []
 rowtest = []
 
+#walk through all directories and files in the input directory
 for root, dirs, files in os.walk(inputdirectory):
+
+    #for each file in the input directory (keep in mind that this will also include files in subdirectories)
     for f in files:
+
         #if map processing limit not exceed and map is a tif or jpg file
         if mapsprocessed < mapprocessinglimit and (f[-3:] == "tif" or f[-3:] == "jpg"):
             img = imm.open(root + "/" + f)
