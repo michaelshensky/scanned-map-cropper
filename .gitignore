@@ -102,3 +102,7 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+
+/cropped_maps/*
+/sample_collared_maps/*
